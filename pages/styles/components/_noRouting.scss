@@ -1,0 +1,198 @@
+.no-routing {
+  .cover-transition {
+      padding: 0 40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+        display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 50px;
+      @media(max-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+      }
+      @media(max-width: 700px){
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    
+    .content--hidden {
+        pointer-events: none;
+      display: none;
+    }
+    
+    .item {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16rem 16rem auto auto;
+      padding: 10px;
+      border: 1px solid black;
+      max-width: 350px;
+    }
+    
+    
+    .item__bottom {
+      position: relative;
+    }
+    
+    .item__title {
+        font-family: kudryashev-d-excontrast-sans, sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      margin: 0;
+    }
+    
+    .item__title-top {
+      visibility: hidden;
+    }
+    
+    .item__top {
+        // position: relative;
+        // overflow: hidden;
+        // width: 100%;
+        // aspect-ratio: 500/333;
+      position: relative;
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 500/333;
+        background-position: 50% 5%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item__img {
+        // position: relative;
+        // overflow: hidden;
+        // width: 100%;
+        // aspect-ratio: 500/333;
+      background-position: 50% 5%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item__img-wrapper {
+        background-position: 50% 5%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item__desc {
+        line-height: 1.1;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+    
+    .item__link, .btn {
+        cursor: pointer;
+          text-transform: lowercase;
+          width: 100%;
+          padding: 10px 50px;
+          color: black;
+          background-color: white;
+          border: 1px solid black;
+          border-radius: 2rem;
+          text-align: center;
+          transition: .5s;
+          position: absolute;
+          bottom: 0;
+          width: 40px;
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+    
+    
+    
+    .overlay-top, .overlay-bottom, .overlay-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        pointer-events: none;
+      background-color: black;
+    }
+    .overlay-top {
+      margin-top: 100%;
+      z-index: 1000;
+    }
+    .overlay-bottom {
+      margin-top: -100%;
+      z-index: 1000;
+    }
+    .overlay-bg {
+    
+    }
+    
+    
+    .previews {
+      position: relative;
+      .btn {
+        width: 200px;
+        margin-top: 30px;
+        background-color: white;
+        left: 50px;
+        &:hover {
+          background-color: black;
+          border: 1px solid white;
+        }
+      }
+    }
+    .preview {
+      border: 1px solid black;
+      &__title {
+        font-size: 5rem;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        margin: auto;
+      }
+      &__top {
+        position: relative;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+      }
+      &__img-wrapper {
+        height: 35vw;
+        width: 100vw;
+        position: relative;
+    
+    
+      }
+      &__img {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+      }
+      &__bottom {
+        display: grid;
+        padding: 55px;
+        grid-template-columns: 3fr 1fr 1fr;
+      }
+      &__column {
+        position: relative;
+        // transform: translateY(140px);
+        &-title {
+          margin: 0;
+          color: white;
+        }
+        p, h3, span {
+          margin: 0;
+          color: white;
+        }
+      }
+    }
+}

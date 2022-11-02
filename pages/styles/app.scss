@@ -1,9 +1,11 @@
 //LIB
 
 //BASE
-
+@import './globals.scss';
 
 //COMPONENTS
-@import "./components/cards";
+@import "./components/noRouting";
+@import "./components/routing";
+@import "./components/routing-single";
 
 

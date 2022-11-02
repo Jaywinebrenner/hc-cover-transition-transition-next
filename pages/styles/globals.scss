@@ -14,3 +14,78 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.top-black {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: 100%;
+  display: grid;
+  position: fixed;
+  // top: -950px;
+  z-index: 1;
+}
+.top-black-animate {
+  animation: moveDown 1s forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveDown {
+  0%   {transform: translateY(0px);}
+
+  100% {transform: translateY(50vh);}
+}
+
+.top-black-animate-rev {
+  animation: moveDownRev 1s forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveDownRev {
+  0%   {transform: translateY(50vh);}
+
+  100% {transform: translateY(0px);}
+}
+
+
+
+
+
+
+
+.bottom-black {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: 100%;
+  display: grid;
+  position: fixed;
+  // top: 950px;
+  z-index: 1;
+}
+.bottom-black-animate {
+  animation: moveUp 1s forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveUp {
+  0%   {transform: translateY(0px);}
+
+  100% {transform: translateY(-50vh);}
+}
+
+.bottom-black-animate-rev {
+  animation: moveUpRev 1s forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveUpRev {
+  0%   {transform: translateY(-50vh);}
+
+  100% {transform: translateY(0px);}
+}
+

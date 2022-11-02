@@ -1,0 +1,40 @@
+.profile-single {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: relative;
+    .back-arrow {
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        height: 45px;
+    }
+    h1, h2, h3 ,h4, h5, h6, p, a, span {
+        color: white;
+    }
+
+
+
+    &__top {
+
+    }
+    .profile-single__wrapper {
+        text-align: center;
+    }
+    &__img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    &__img {
+        width: 500px;
+    }
+    &__title {
+        font-size: 4rem;
+        margin-bottom: 0;
+        transform: translateY(67px);
+    }
+
+}
