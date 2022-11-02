@@ -5,6 +5,7 @@
     align-items: center;
     background: black;
     position: relative;
+    flex-direction: column;
     .back-arrow {
         color: white;
         position: absolute;
@@ -15,12 +16,17 @@
     h1, h2, h3 ,h4, h5, h6, p, a, span {
         color: white;
     }
+    &__column {
 
-
-
-    &__top {
-
+        h3 {
+            margin: 0;
+            margin-top: 10px;
+        }
+        p {
+            margin: 0;
+        }
     }
+
     .profile-single__wrapper {
         text-align: center;
     }
@@ -31,10 +37,6 @@
     &__img {
         width: 500px;
     }
-    &__title {
-        font-size: 4rem;
-        margin-bottom: 0;
-        transform: translateY(67px);
-    }
+
 
 }

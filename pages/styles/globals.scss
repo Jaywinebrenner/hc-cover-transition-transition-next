@@ -28,25 +28,25 @@ a {
   z-index: 1;
 }
 .top-black-animate {
-  animation: moveDown 1s forwards;
+  animation: moveDown .75s forwards;
   animation-timing-function: ease-in;
 }
 
 @keyframes moveDown {
   0%   {transform: translateY(0px);}
 
-  100% {transform: translateY(50vh);}
+  100% {transform: translateY(55vh);}
 }
 
 .top-black-animate-rev {
-  animation: moveDownRev 1s forwards;
-  animation-timing-function: ease-in;
+  animation: moveDownRev .75s forwards;
+  // animation-timing-function: ease-in;
 }
 
 @keyframes moveDownRev {
-  0%   {transform: translateY(50vh);}
+  0%   {transform: translateY(55vh);}
 
-  100% {transform: translateY(0px);}
+  100% {transform: translateY(200vh);}
 }
 
 
@@ -68,24 +68,71 @@ a {
   z-index: 1;
 }
 .bottom-black-animate {
-  animation: moveUp 1s forwards;
+  animation: moveUp .75s forwards;
   animation-timing-function: ease-in;
 }
 
 @keyframes moveUp {
   0%   {transform: translateY(0px);}
 
-  100% {transform: translateY(-50vh);}
+  100% {transform: translateY(-55vh);}
 }
 
 .bottom-black-animate-rev {
-  animation: moveUpRev 1s forwards;
+  animation: moveUpRev .75s forwards;
   animation-timing-function: ease-in;
 }
 
 @keyframes moveUpRev {
-  0%   {transform: translateY(-50vh);}
+  0%   {transform: translateY(-55vh);}
 
   100% {transform: translateY(0px);}
+}
+
+
+
+.profile-single__title {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.single-title-animate {
+  animation: animateSingleTitle .75s forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes animateSingleTitle {
+  0%   {
+    transform: translateY(10px);
+    opacity: 0;
+    }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+
+
+.profile-single__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -135px;
+}
+
+.single-nav-animate {
+  animation: animateSingleNav .75s forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes animateSingleNav {
+  0%   {
+    transform: translateY(-10px);
+    opacity: 0;
+    }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
 }
 

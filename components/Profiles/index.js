@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, {useState, useEffect, useRef} from 'react';
 import { useRouter } from 'next/router';
 
-const Profiles = ({animationActive, handleClick, reverseAnimationActive}) => {
+const Profiles = ({handleClick}) => {
 
   useEffect(() => {
 
@@ -13,7 +13,7 @@ const Profiles = ({animationActive, handleClick, reverseAnimationActive}) => {
 
   return (
     <div className="routing">
-      <h1>Profiles</h1>
+      <h1 className="routing__title">Profiles</h1>
       <div className="profiles">
       {fakeData && fakeData.map((item, i) => 
         <div key={`item-key=${i}`} className="item">

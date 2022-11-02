@@ -30,8 +30,8 @@ export const fakeData = [
         previewName: 'Greg Daniels',
         questionOneAnswer: 'Purlle',
         questionTwoAnswer: 'Chicken Tikka Masala',
-        url: 'img/3.jpg',
-        urlBig: 'img/3_big.jpg',
+        url: 'img/1.jpg',
+        urlBig: 'img/1_big.jpg',
         id: 249587224
     },
     // {

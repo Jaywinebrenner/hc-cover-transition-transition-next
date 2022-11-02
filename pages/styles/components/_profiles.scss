@@ -1,4 +1,8 @@
 .routing {
+    &__title {
+        text-align: center;
+        font-size: 4rem;
+    }
 
     .profiles {
         display: grid;
@@ -50,8 +54,8 @@
           font-family: kudryashev-d-excontrast-sans, sans-serif;
           font-weight: 300;
           font-size: 2rem;
-          margin-bottom: 0.5rem;
-        margin: 0;
+        //   margin-bottom: 0.5rem;
+            margin: 20px 0;
       }
       
       .item__title-top {
@@ -99,8 +103,6 @@
       
       .item__link, .btn {
           cursor: pointer;
-            text-transform: lowercase;
-            width: 100%;
             padding: 10px 50px;
             color: black;
             background-color: white;
@@ -110,38 +112,13 @@
             transition: .5s;
             position: absolute;
             bottom: 0;
-            width: 40px;
+            width: 100%;
         &:hover {
           color: white;
           background-color: black;
         }
       }
-      
-      
-      
-      .overlay-top, .overlay-bottom, .overlay-bg {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: grid;
-          pointer-events: none;
-        background-color: black;
-      }
-      .overlay-top {
-        margin-top: 100%;
-        z-index: 1000;
-      }
-      .overlay-bottom {
-        margin-top: -100%;
-        z-index: 1000;
-      }
-      .overlay-bg {
-      
-      }
-      
-      
+            
       .previews {
         position: relative;
         .btn {

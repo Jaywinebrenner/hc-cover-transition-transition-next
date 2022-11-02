@@ -1,5 +1,5 @@
-import NoRouting from '../components/NoRouting'
-import Routing from '../components/Routing'
+
+import Profiles from '../components/Profiles'
 import React, { } from 'react'
 
 
@@ -7,7 +7,7 @@ export default function Home({handleClick, animationActive, reverseAnimationActi
 
   return (
     <div>
-      <Routing handleClick={handleClick} animationActive={animationActive} reverseAnimationActive={reverseAnimationActive}></Routing>
+      <Profiles handleClick={handleClick} animationActive={animationActive} reverseAnimationActive={reverseAnimationActive}></Profiles>
     </div>
   )
 }

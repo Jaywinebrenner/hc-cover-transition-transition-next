@@ -5,7 +5,7 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
-const Profile = () => {
+const Profile = ({handleRevClick, singleTitleActive}) => {
 
   const profileBottomRef = useRef();
 
@@ -20,17 +20,22 @@ const Profile = () => {
 
   return (
     <div className='profile-single'>
-      <Link href="/">
+      <div className={`profile-single__nav ${singleTitleActive ? "single-nav-animate" : ""}`}>
+        <div className='left'><p>Ullamcorper velit sed ullamcorper</p></div>
+        <div className='middle'><p>Iaculis urna id volutpat lacus laoreet</p></div>
+        <div className='right'><p>Tincidunt vitae semper quis lectus nulla</p></div>
+      </div>
+      <Link onClick={()=> handleRevClick()} href="/">
         <FontAwesomeIcon className="back-arrow" icon={faCircleXmark} />
       </Link>
       
       {
         fakeData.map((profile, i) => {
           if(profile.itemTitle === profileName){
-            console.log("profile", profile)
             return(
+
               <div className='profile-single__wrapper'>
-                <h1 className='profile-single__title'>{profile.itemTitle}</h1>
+                <h1 className={`profile-single__title ${singleTitleActive ? "single-title-animate" : ""}`}>{profile.itemTitle}</h1>
                 <div ref={profileBottomRef} key={`profile-single-key=${i}`}>
                 <div className="profile-single__top">
                   <div className="profile-single__img-wrapper">
