@@ -2,36 +2,27 @@
 
 export const fakeData = [
     {
-        itemTitle: 'Jon McPerson',
+        itemTitle: 'Patricia Example',
         itemContent: 'Et Magna etiam tempor orci eu lobortis Quam pellentesque nec nam aliquam sem et.  elementum. Aenean et tortor at risus viverra adipiscing at in. Maecenas accumsan lacus vel facilisis volutpat. Morbi non arcu risus quis. ',
-        previewTitle: 'McPerson',
-        previewName: 'Jon McPerson',
         questionOneAnswer: 'Mauve',
         questionTwoAnswer: 'Turkey Sandwich',
         url: 'img/0.jpg',
-        urlBig: 'img/0_big.jpg',
         id: 2352465
     },
     {
-        itemTitle: 'Samamtha Smith',
+        itemTitle: 'Samamtha Example',
         itemContent: 'Quam pellentesque nec nam aliquam sem et. Magna etiam tempor orci eu lobortis elementum. Aenean et tortor at risus viverra adipiscing at in. Maecenas accumsan lacus vel facilisis volutpat. Morbi non arcu risus quis. ',
-        previewTitle: 'Smith',
-        previewName: 'Samamtha Smith',
         questionOneAnswer: 'Blue or Green',
         questionTwoAnswer: 'Olives',
         url: 'img/2.jpg',
-        urlBig: 'img/2_big.jpg',
         id: 982475
     },
     {
-        itemTitle: 'Greg Daniels',
+        itemTitle: 'Sandra Example',
         itemContent: 'Magna etiam tempor orci eu lobortis elementum. Aenean et tortor at risus viverra adipiscing at in. ',
-        previewTitle: 'Daniels',
-        previewName: 'Greg Daniels',
-        questionOneAnswer: 'Purlle',
+        questionOneAnswer: 'Beige',
         questionTwoAnswer: 'Chicken Tikka Masala',
         url: 'img/1.jpg',
-        urlBig: 'img/1_big.jpg',
         id: 249587224
     },
     // {

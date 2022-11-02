@@ -1,13 +1,20 @@
-.routing {
+.profiles-wrapper {
+  height: 100vh;
+  background: whitesmoke;
     &__title {
         text-align: center;
         font-size: 4rem;
+        margin: 0;
+        padding: 24px 0;
     }
 
     .profiles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
+        max-width: 1400px;
+
+        margin: auto;
     }
     .cover-transition {
         padding: 0 40px;
@@ -28,13 +35,10 @@
           grid-template-columns: 1fr;
         }
       }
-      
-      
       .content--hidden {
         pointer-events: none;
         display: none;
       }
-      
       .item {
         display: grid;
         grid-template-columns: 100%;
@@ -43,18 +47,15 @@
         border: 1px solid black;
         max-width: 350px;
         margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
       }
-      
-      
       .item__bottom {
         position: relative;
       }
-      
       .item__title {
           font-family: kudryashev-d-excontrast-sans, sans-serif;
           font-weight: 300;
           font-size: 2rem;
-        //   margin-bottom: 0.5rem;
             margin: 20px 0;
       }
       
@@ -63,10 +64,6 @@
       }
       
       .item__top {
-          // position: relative;
-          // overflow: hidden;
-          // width: 100%;
-          // aspect-ratio: 500/333;
         position: relative;
           overflow: hidden;
           width: 100%;
@@ -78,10 +75,6 @@
       }
       
       .item__img {
-          // position: relative;
-          // overflow: hidden;
-          // width: 100%;
-          // aspect-ratio: 500/333;
         background-position: 50% 5%;
           background-size: cover;
           width: 100%;
@@ -105,7 +98,7 @@
           cursor: pointer;
             padding: 10px 50px;
             color: black;
-            background-color: white;
+            background-color: whitesmoke;
             border: 1px solid black;
             border-radius: 2rem;
             text-align: center;
@@ -114,7 +107,7 @@
             bottom: 0;
             width: 100%;
         &:hover {
-          color: white;
+          color: whitesmoke;
           background-color: black;
         }
       }
@@ -124,11 +117,11 @@
         .btn {
           width: 200px;
           margin-top: 30px;
-          background-color: white;
+          background-color: whitesmoke;
           left: 50px;
           &:hover {
             background-color: black;
-            border: 1px solid white;
+            border: 1px solid whitesmoke;
           }
         }
       }
@@ -136,7 +129,7 @@
         border: 1px solid black;
         &__title {
           font-size: 5rem;
-          color: white;
+          color: whitesmoke;
           z-index: 1;
           text-align: center;
           margin: auto;
@@ -169,11 +162,11 @@
           position: relative;
           &-title {
             margin: 0;
-            color: white;
+            color: whitesmoke;
           }
           p, h3, span {
             margin: 0;
-            color: white;
+            color: whitesmoke;
           }
         }
       }

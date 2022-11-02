@@ -7,17 +7,16 @@
     position: relative;
     flex-direction: column;
     .back-arrow {
-        color: white;
+        color: whitesmoke;
         position: absolute;
         top: 50px;
         left: 50px;
         height: 45px;
     }
     h1, h2, h3 ,h4, h5, h6, p, a, span {
-        color: white;
+        color: whitesmoke;
     }
     &__column {
-
         h3 {
             margin: 0;
             margin-top: 10px;
@@ -26,17 +25,20 @@
             margin: 0;
         }
     }
-
     .profile-single__wrapper {
         text-align: center;
     }
     &__img-wrapper {
-        width: 100%;
-        height: 100%;
+        width: 90vw;
     }
     &__img {
-        width: 500px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        height: 328px;
+        object-position: 5% 20%;
     }
-
-
+    &__bottom {
+        margin-top: 28px;
+    }
 }

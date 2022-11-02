@@ -49,7 +49,9 @@ function MyApp({ Component, pageProps }) {
       <div style={{ top: `-${windowHeight}px`}} className={`top-black ${animationActive ? "top-black-animate" : ""} ${reverseAnimationActive ? "top-black-animate-rev" : ""}`}>
       </div>
       <div style={{ top: `${windowHeight}px`}} className={`bottom-black ${animationActive ? "bottom-black-animate" : ""} ${reverseAnimationActive ? "bottom-black-animate-rev" : ""}`}></div>
+
       <Component {...pageProps } handleClick={handleClick} handleRevClick={handleRevClick} singleTitleActive={singleTitleActive}/>
+
     </>
     )
 }

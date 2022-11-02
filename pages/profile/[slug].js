@@ -41,21 +41,20 @@ const Profile = ({handleRevClick, singleTitleActive}) => {
                   <div className="profile-single__img-wrapper">
                     <img className='profile-single__img' src={`/${profile.url}`}/>
                   </div>
-                  <div className="profile-single__img" style={{backgroundImage: `url(${profile.urlBig})`}}>
-                    </div>
                 </div>
   
-                <div className="profile-single__bottom">
+                <div className={`profile-single__bottom ${singleTitleActive ? "single-bottom-animate" : ""}`}>
                   <div className="profile-single__column">
                     <span className="profile-single__column-title profile-single__column-title--main">{profile.profileName}</span>
                   </div>
                   <div className="profile-single__column">
                     <h3 className="profile-single__column-title">Favorite Food</h3>
-                    <p>{profile.questionOneAnswer}</p>
+
+                    <p>{profile.questionTwoAnswer}</p>
                   </div>
                   <div className="profile-single__column">
                     <h3 className="profile-single__column-title">Favorite Color</h3>
-                    <p>{profile.questionTwoAnswer}</p>
+                    <p>{profile.questionOneAnswer}</p>
                   </div>         
                 </div>
               </div>

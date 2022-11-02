@@ -1,4 +1,4 @@
-import { fakeData } from "../../utils/fakeData";
+import { fakeData } from "../utils/fakeData";
 import { motion } from "framer-motion"
 import Link from "next/link";
 import React, {useState, useEffect, useRef} from 'react';
@@ -12,8 +12,8 @@ const Profiles = ({handleClick}) => {
 
 
   return (
-    <div className="routing">
-      <h1 className="routing__title">Profiles</h1>
+    <div className="profiles-wrapper">
+      <h1 className="profiles-wrapper__title">Profiles</h1>
       <div className="profiles">
       {fakeData && fakeData.map((item, i) => 
         <div key={`item-key=${i}`} className="item">
