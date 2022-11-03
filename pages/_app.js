@@ -1,9 +1,13 @@
 import "./styles/app.scss";
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import styled, { keyframes } from 'styled-components'
 
 function MyApp({ Component, pageProps }) {
+
+  // ANIMATION PROPS
+  let animationSpeed = 1000;
+  let blackOverlayBezier = 'linear'
+
   const [animationActive, setAnimationActive] = useState(false);
   const [reverseAnimationActive, setReverseAnimationActive] = useState(false);
   const [singleTitleActive, setSingleTitleActive] = useState(false);
@@ -11,17 +15,15 @@ function MyApp({ Component, pageProps }) {
   const [windowHeight, setWindowHeight] = useState();
   const router = useRouter();
 
-  let animationSpeed = 1000;
-
   const handleClick = (item) => {
     setAnimationActive(true);
     setTimeout(() => {
       router.push(`/profile/${item.itemTitle}`)
-    }, animationSpeed <= 1000 ? 700 : animationSpeed - 1000)
+    }, animationSpeed )
     setTimeout(() => {
       setReverseAnimationActive(true);
       setSingleTitleActive(true);
-    }, animationSpeed <= 1000 ? 700 : animationSpeed - 1000)
+    }, animationSpeed)
   }
   const handleRevClick = () => {
     setAnimationActive(false);
@@ -35,46 +37,29 @@ function MyApp({ Component, pageProps }) {
     setReverseAnimationActive(false)
   }, []);
 
-  let renderTopStyle = () => {
-    if(animationActive){
-      console.log("ONE")
-      return (
-        {
-          animation: `moveDown 750ms forwards`,
-          top: `-${windowHeight}px`
-        }
-      )
-    }
-    if(reverseAnimationActive){
-      console.log("TWO") 
-      return (
-        {animation: `moveDownRev 750ms forwards`}
-      )
-    }
-    if(animationActive === false){
-      console.log("THREE")
-      return (
-        {top: `-${windowHeight}px`}
-      )
-    }
+
+  const styleObjectTop = {
+    top: `-${windowHeight}px`,
+    animationDuration: `${animationSpeed}ms`,
+    animationTimingFunction: {blackOverlayBezier}
   }
 
-
+  const styleObjectBottom = {
+    top: `${windowHeight}px`,
+    animationDuration: `${animationSpeed}ms`,
+    animationTimingFunction: {blackOverlayBezier}
+  }
 
   return (
     <>
       <div 
-        style={{ 
-         top: `-${windowHeight}px`
-        }} 
+        style={styleObjectTop} 
         className={
           `top-black ${animationActive ? "top-black-animate" : ""} 
           ${reverseAnimationActive ? "top-black-animate-rev" : ""}`}>
       </div>
       <div 
-        style={{ 
-          top: `${windowHeight}px`
-        }} 
+        style={styleObjectBottom} 
         className={
           `bottom-black ${animationActive ? "bottom-black-animate" : ""} 
           ${reverseAnimationActive ? "bottom-black-animate-rev" : ""}`}>
