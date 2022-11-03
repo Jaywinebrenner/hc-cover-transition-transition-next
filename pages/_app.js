@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 function MyApp({ Component, pageProps }) {
 
   // ANIMATION PROPS
-  let animationSpeed = 1000;
+  let animationSpeed = 750;
   let blackOverlayBezier = 'linear'
 
   const [animationActive, setAnimationActive] = useState(false);
