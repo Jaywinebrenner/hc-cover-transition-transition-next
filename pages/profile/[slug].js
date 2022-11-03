@@ -34,7 +34,7 @@ const Profile = ({handleRevClick, singleTitleActive}) => {
           if(profile.itemTitle === profileName){
             return(
 
-              <div className='profile-single__wrapper'>
+              <div key={`profile-key=${i}`} className='profile-single__wrapper'>
                 <h1 className={`profile-single__title ${singleTitleActive ? "single-title-animate" : ""}`}>{profile.itemTitle}</h1>
                 <div ref={profileBottomRef} key={`profile-single-key=${i}`}>
                 <div className="profile-single__top">

@@ -15,9 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-
-
-
 // ANIMATIONS------------------------------------------------------
 
 
@@ -34,7 +31,7 @@ a {
   z-index: 1;
 }
 .top-black-animate {
-  animation: moveDown .75s forwards;
+  animation: moveDown 750ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes moveDown {
@@ -44,9 +41,10 @@ a {
 }
 
 
+
 // TOP BLACK MOVE DOWN ACROSS SCREEN - SECOND ANIMATION
 .top-black-animate-rev {
-  animation: moveDownRev .75s forwards;
+  animation: moveDownRev 750ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes moveDownRev {
@@ -69,7 +67,7 @@ a {
   z-index: 1;
 }
 .bottom-black-animate {
-  animation: moveUp .75s forwards;
+  animation: moveUp 750ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes moveUp {
@@ -79,9 +77,12 @@ a {
 }
 
 
+
+
+
 // BOTTOM BLACK MOVE BACK DOWN - SECOND ANIMATION
 .bottom-black-animate-rev {
-  animation: moveUpRev .75s forwards;
+  animation: moveUpRev 750ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes moveUpRev {
@@ -97,7 +98,7 @@ a {
   margin-bottom: 34px;
 }
 .single-title-animate {
-  animation: animateSingleTitle 1s forwards;
+  animation: animateSingleTitle 1000ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes animateSingleTitle {
@@ -119,7 +120,7 @@ a {
   margin-top: -102px;
 }
 .single-nav-animate {
-  animation: animateSingleNav 1s forwards;
+  animation: animateSingleNav 1000ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes animateSingleNav {
@@ -139,7 +140,7 @@ a {
 
 }
 .single-bottom-animate {
-  animation: animateSingleBottom 1.4s forwards;
+  animation: animateSingleBottom 1400ms forwards;
   animation-timing-function: ease-in;
 }
 @keyframes animateSingleBottom {

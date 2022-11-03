@@ -1,15 +1,12 @@
 import { fakeData } from "../utils/fakeData";
-import { motion } from "framer-motion"
-import Link from "next/link";
-import React, {useState, useEffect, useRef} from 'react';
-import { useRouter } from 'next/router';
+import React, {useEffect} from 'react';
+
 
 const Profiles = ({handleClick}) => {
 
   useEffect(() => {
 
   }, []);
-
 
   return (
     <div className="profiles-wrapper">

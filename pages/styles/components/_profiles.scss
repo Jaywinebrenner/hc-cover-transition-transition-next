@@ -7,14 +7,17 @@
         margin: 0;
         padding: 24px 0;
     }
-
     .profiles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
         max-width: 1400px;
-
+        height: 80vh;
         margin: auto;
+        @media (max-width: 1200px) {
+          grid-template-columns: 1fr;
+          background-color: whitesmoke;
+        }
     }
     .cover-transition {
         padding: 0 40px;
@@ -25,7 +28,7 @@
         align-items: center;
       }
       .content {
-          display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
         @media(max-width: 1000px){
